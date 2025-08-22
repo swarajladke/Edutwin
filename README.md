@@ -1,107 +1,34 @@
-# React
+# 📚 Edutwin – AI-Augmented Digital Twin for Personalized Learning
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+Edutwin is an innovative platform that creates **AI-powered digital twins of students** to personalize learning experiences. By analyzing individual learning patterns, performance, and engagement, Edutwin adapts educational content in real-time, providing a **virtual replica of the student** to ensure better outcomes and personalized guidance.
+
+---
 
 ## 🚀 Features
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+- 🎭 **Student Digital Twin** – Creates a virtual AI model of each learner.  
+- 📊 **Personalized Dashboard** – Real-time analytics of performance, progress, and recommendations.  
+- 🤖 **AI-Powered Adaptation** – Dynamically adjusts study content based on student learning style.  
+- 🔍 **Insights & Reports** – Provides detailed reports for students and educators.  
+- 🌐 **Seamless Integration** – React-based front-end with AI-driven Flask backend.  
 
-## 📋 Prerequisites
+---
 
-- Node.js (v14.x or higher)
-- npm or yarn
+## 🛠️ Tech Stack
 
-## 🛠️ Installation
+**Frontend**  
+- ⚛️ React (Vite)  
+- 🎨 Tailwind CSS / Shadcn UI  
+- 📈 Charting libraries for analytics  
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+**Backend**  (working)
+- 🐍 Flask (Python)  
+- 🍃 MongoDB (for storing user and learning data)  
+- 🤖 OpenAI / AI APIs for personalization  
 
-## 📁 Project Structure
+**Other Tools**  
+- 🔧 Git & GitHub (Version Control)  
+- 🟢 Node.js (Package management)  
 
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
-```
+---
 
-## 🧩 Adding Routes
-
-To add new routes to the application, update the `Routes.jsx` file:
-
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
-
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
-
-  return element;
-};
-```
-
-## 🎨 Styling
-
-This project uses Tailwind CSS for styling. The configuration includes:
-
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
-
-## 📱 Responsive Design
-
-The app is built with responsive design using Tailwind CSS breakpoints.
-
-
-## 📦 Deployment
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new
